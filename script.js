@@ -18,4 +18,10 @@ document.addEventListener("DOMContentLoaded",()=>{
             e.target.nextElementSibling.nextElementSibling.classList.toggle("enlarged")
         })
     })
+    document.querySelector(".shade").addEventListener("click",()=>{
+        let target = document.querySelector("img.enlarged")
+        target.classList.remove("enlarged")
+        target.nextElementSibling.nextElementSibling.classList.toggle("enlarged")
+        toggleShade()
+    })
 })
